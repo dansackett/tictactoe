@@ -6,6 +6,7 @@ import classnames from 'classnames';
 import { Move, Board, Coords } from '../types';
 
 import ModeButton from './ModeButtons';
+import { GithubIcon, LinkedInIcon } from './Icons';
 
 import {
   MAX_ROWS,
@@ -122,8 +123,17 @@ export default function Game() {
           <p className="mt-8 text-md font-medium text-pretty text-gray-500 sm:text-xl/8">
             It&apos;s a classic game of basic strategy that we all know and love. Do you have what it takes to win on hard mode? Can you outsmart impossible mode?
           </p>
-          <p className="mt-8 text-md font-medium text-pretty text-gray-500 sm:text-xl/8">
+          <p className="mt-3 text-md font-medium text-pretty text-gray-500 sm:text-xl/8">
             May the odds be ever in your favor!
+          </p>
+          <p className="mt-3 text-md font-medium text-pretty text-gray-500 sm:text-xl/8">
+            <a href="https://github.com/dansackett/tictactoe">
+              <GithubIcon className="inline-block m-4" />
+            </a>
+
+            <a href="https://linkedin.com/in/dansackett">
+              <LinkedInIcon className="inline-block m-4" />
+            </a>
           </p>
 
           <div className="py-4">
