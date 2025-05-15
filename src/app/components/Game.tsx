@@ -113,16 +113,16 @@ export default function Game() {
   };
 
   return (
-    <div className="max-w-md m-auto my-20">
+    <div className="max-w-lg m-auto my-20">
       <div className="grid grid-cols-1 gap-4 text-center antialiased font-bold py-4">
         <div className="p-4 shadow-lgitems-center justify-center">
           <h1 className="text-5xl font-semibold tracking-tight text-balance text-gray-300 sm:text-7xl">
             Tic Tac Toe
           </h1>
-          <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
+          <p className="mt-8 text-md font-medium text-pretty text-gray-500 sm:text-xl/8">
             It's a classic game of basic strategy that we all know and love. Do you have what it takes to win on hard mode? Can you outsmart impossible mode?
           </p>
-          <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
+          <p className="mt-8 text-md font-medium text-pretty text-gray-500 sm:text-xl/8">
             May the odds be ever in your favor!
           </p>
 
