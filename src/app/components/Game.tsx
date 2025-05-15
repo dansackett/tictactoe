@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import classnames from 'classnames';
 
-import { Move, Board, Coords } from './types';
+import { Move, Board, Coords } from '../types';
 
 import ModeButton from './ModeButtons';
 
@@ -13,20 +13,20 @@ import {
   MODE_EASY,
   MODE_HARD,
   MODE_IMPOSSIBLE
-} from './const';
+} from '../const';
 
 import {
   getBestMoveEasy,
   getBestMoveHard,
   getBestMoveImpossible,
-} from './ai';
+} from '../ai';
 
 import {
   getIsRowWinner,
   getIsColWinner,
   getIsLeftDiagonalWinner,
   getIsRightDiagonalWinner,
-} from './utils';
+} from '../utils';
 
 const getAiMove = (mode: string): (board: Board) => Coords | null => {
   if (mode === MODE_EASY) {
@@ -116,8 +116,12 @@ export default function Game() {
     <div className="max-w-md m-auto my-20">
       <div className="grid grid-cols-1 gap-4 text-center antialiased font-bold py-4">
         <div className="p-4 shadow-lgitems-center justify-center">
-          <h1 className="text-3xl text-bold">TicTacToe</h1>
-          <p className="max-w-md m-auto">It's a classic game of basic strategy that we all know and love. Do you have what it takes to win on hard mode? Can you outsmart impossible mode? May the odds be ever in your favor!</p>
+          <h1 className="text-5xl font-semibold tracking-tight text-balance text-gray-300 sm:text-7xl">
+            Tic Tac Toe
+          </h1>
+          <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
+            It's a classic game of basic strategy that we all know and love. Do you have what it takes to win on hard mode? Can you outsmart impossible mode? May the odds be ever in your favor!
+          </p>
 
           <div className="py-4">
             <ModeButton
